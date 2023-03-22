@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Orbitron", serif;
+    overflow-y: hidden;
+}
+
+.container {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* <!-- Navbar Section --> */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+}
+
+.navbar-container div:first-child img {
+    width: 120px;
+}
+
+.list {
+    display: flex;
+    font-family: "Orbitron";
+    font-size: 20px;
+    font-weight: 500;
+    gap: 40px;
+}
+
+.navbar-container .list .list-item {
+    cursor: pointer;
+    list-style: none;
+}
+
+.list>:first-child::after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: #000000;
+    margin: 0 auto;
+
+}
+
+.list>:first-child {
+    font-weight: 800;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-icon {
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.nav-button {
+    padding: 7px 40px;
+    border: 3px solid #000000;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* <!-- Hero Banner Section --> */
+.hero-container {
+    display: flex;
+    height: 80vh;
+    position: relative;
+}
+
+
+.square>img {
+    position: absolute;
+    width: 310px;
+    top: 225px;
+    left: 150px;
+}
+
+.globe {
+    position: absolute;
+    left: 680px;
+    top: -20px;
+}
+
+.globe img {
+    width: 50px;
+}
+
+.hero-container span+div {
+    width: 220px;
+}
+
+.hero-container .globe+div>img {
+    position: absolute;
+    width: 390px;
+    left: 12px;
+    top: 14px;
+}
+
+.star {
+    position: absolute;
+    right: 0;
+}
+
+.star img {
+    width: 40px;
+}
+
+.hero-container-right {
+    position: relative;
+    left: 190px;
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+.hero-heading {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+}
+
+.hero-description {
+    color: #8a8989;
+    max-width: 600px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.button-email {
+    padding: 4px 25px;
+    font-family: "Orbitron";
+    font-size: 1rem;
+    border: 2px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.button-join {
+    font-family: "Orbitron";
+    font-weight: 700;
+    padding: 6px;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.contact-heading {
+text-align: center;
+color: #525050;
+font-weight: 600;
+padding-bottom: 20px;
+}
+
+.icons > span > img {
+width: 32px;
+cursor: pointer;
+bottom: 0;
+}
+
+.icons > span:not(:last-child) {
+    margin-right: 10px;
+}
